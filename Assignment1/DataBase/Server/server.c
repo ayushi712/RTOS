@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <sys/ipc.h> 
 #include <sys/msg.h> 
-#include<time.h>
 #include<string.h>
 
   
@@ -26,9 +25,7 @@ struct mesg_buffer
 int main() 
 { 
     key_t key; 
-    int msgid;
-    clock_t start, end;
-    double cpu_time_used; 
+    int msgid; 
   
     // ftok to generate unique key 
     key = ftok("progfile", 65); 
@@ -36,8 +33,6 @@ int main()
     // msgget creates a message queue and returns identifier 
     msgid = msgget(key, 0666 | IPC_CREAT); 
 
-     //clock for timer 
-    start = clock();
     
     while(1)
 	{                        //while loop starts
@@ -71,10 +66,6 @@ int main()
     fclose(fp);
     printf("%s",data);
    
-        end = clock();
-	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-	printf("Time is: %f\n",cpu_time_used); 
-
 
     // msgsnd to send message 
     msgsnd(msgid, &filename, sizeof(filename), 0); 
