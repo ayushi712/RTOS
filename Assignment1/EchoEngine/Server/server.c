@@ -1,7 +1,6 @@
 #include <stdio.h> 
 #include <sys/ipc.h> 
-#include <sys/msg.h>
-#include<time.h> 
+#include <sys/msg.h> 
 #define MAX_SIZE 100
   
 // structure for message queue
@@ -21,8 +20,6 @@ int main()
 {   
     key_t key; 
     int msgid; 
-    clock_t start, end;
-    double cpu_time_used;
   
     // ftok to generate unique key 
     key = ftok("progfile", 65); 
@@ -30,10 +27,6 @@ int main()
 
     // msgget creates a message queue and returns identifier 
     msgid = msgget(key, 0666 | IPC_CREAT); 
-  
-
-    //clock for timer 
-    start = clock();
     
     while(1)
 	{                        //while loop starts
@@ -68,10 +61,7 @@ int main()
  
         
         printf("Converted string is: %s \n",message.mesg_text); 
-        end = clock();
-	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-	printf("Time is: %f\n",cpu_time_used); 
-  
+        
         //msgsnd to send message 
     	msgsnd(msgid, &message, sizeof(message), 0);
 	
