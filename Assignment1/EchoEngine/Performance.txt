@@ -1,0 +1,7 @@
+Performance Result:
+
+1 client  - 0.017ms
+2 clients - 0.036ms
+3 clients - 0.057ms
+4 clients - 0.078ms
+5 clients - 0.101ms
