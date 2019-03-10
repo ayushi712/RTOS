@@ -1,0 +1,12 @@
+﻿Number of Clients at a time
+	Time in micro seconds
+	1 client
+	46
+	2 clients
+	59
+	3 clients
+	78
+	4 clients
+	106
+	5 clients
+	201
