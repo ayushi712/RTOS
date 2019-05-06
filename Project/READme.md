@@ -75,7 +75,10 @@ The client will also wait for the positive ackwoledgement(ACK) before sending mo
 * We are getting a random nature of timing for a set of probabilities of error.
 * As we are inserting error into both data and acknowledgements , we could not figure out 
   whether the receiver has received the NACK because of error in NACK/ACK or because of error in data.
-  
+
+## Link:  [https://github.com/ayushi712/RTOS/edit/master/Project](https://github.com/ayushi712/RTOS/edit/master/Project)
+
+ 
 ## Concepts for Reference:
 
 * [(https://www.sciencedirect.com/topics/engineering/cyclic-redundancy-check](https://www.sciencedirect.com/topics/engineering/cyclic-redundancy-check)
@@ -84,4 +87,3 @@ The client will also wait for the positive ackwoledgement(ACK) before sending mo
 * [https://www.cs.dartmouth.edu/~campbell/cs50/socketprogramming.html](https://www.cs.dartmouth.edu/~campbell/cs50/socketprogramming.html)
 * [https://www.computer-networking.info/1st/html/transport/principles.html](https://www.computer-networking.info/1st/html/transport/principles.html)
 
-##Link: * [https://github.com/ayushi712/RTOS/edit/master/Project](https://github.com/ayushi712/RTOS/edit/master/Project)
