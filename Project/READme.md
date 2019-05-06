@@ -1,3 +1,5 @@
+## CYCLIC REDUNDANCY CHECK FOR SOCKET PROGRAMMING
+
 ## Problem:
 
 Internet protocol doesn't guarentee packet delivery,in-order delivery and the integrity of the data in packtes. 
@@ -81,3 +83,5 @@ The client will also wait for the positive ackwoledgement(ACK) before sending mo
 * [https://www.hackerearth.com/practice/notes/akshaypai94/socket-programming-using-tcpip/](https://www.hackerearth.com/practice/notes/akshaypai94/socket-programming-using-tcpip/)
 * [https://www.cs.dartmouth.edu/~campbell/cs50/socketprogramming.html](https://www.cs.dartmouth.edu/~campbell/cs50/socketprogramming.html)
 * [https://www.computer-networking.info/1st/html/transport/principles.html](https://www.computer-networking.info/1st/html/transport/principles.html)
+
+##Link: * [https://github.com/ayushi712/RTOS/edit/master/Project](https://github.com/ayushi712/RTOS/edit/master/Project)
